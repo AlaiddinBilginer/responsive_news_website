@@ -1,0 +1,51 @@
+/* Navbar */
+#main-nav .container {
+  flex-direction: column;
+  text-align: center;
+}
+
+#main-nav .logo {
+  margin-bottom: 1rem;
+}
+
+#main-nav ul {
+  margin-bottom: 1rem;
+}
+
+#main-nav .social {
+  display: none;
+}
+
+/* Showcase */
+#showcase .showcase-container {
+  grid-template-columns: 2fr 1fr;
+}
+
+/* Articles */
+#articles .articles-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#articles .articles-container > *:first-child {
+  grid-template-columns: 1fr;
+  grid-column: 1;
+}
+
+#articles .articles-container > *:last-child {
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: 1/ span 2;
+}
+
+/* Footer */
+#main-footer .footer-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#main-footer .footer-container > *:first-child {
+  grid-column: 1/ span 2;
+}
+
+/* About */
+#about-articles > .container {
+  grid-template-columns: 5fr 4fr;
+}
